@@ -2,7 +2,7 @@
 
 cd ~/Documents/vimrc
 A="$(ls ~/.vim/src)"
-A.=" ~/.vimrc"
+A="${A} ~/.vimrc"
 echo $A
 
 ls ~/.vimrc | entr ./entrscript.sh
