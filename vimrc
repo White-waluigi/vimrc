@@ -14,7 +14,7 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 
-set lines=100 columns=2999
+"set lines=100 columns=2999
 call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
 
 set nowrap
