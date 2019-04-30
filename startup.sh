@@ -1,8 +1,11 @@
 #!/bin/bash
 
+
+NEWLINE=$'\n'
 cd ~/Documents/vimrc
 A="$(find ~/.vim/src)"
-A="${A} ~/.vimrc"
 echo $A
+A=$"${A}${NEWLINE}$(find ~/.vimrc)"
+echo "${A}"
 
-ls ~/.vimrc | entr ./entrscript.sh
+echo "$A" | entr ./entrscript.sh
