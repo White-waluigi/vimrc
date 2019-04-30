@@ -122,7 +122,7 @@ runtime src/jsexec.vim
 
 
 function NewTrash()
-	cd /home/marvin/Documents/trash/vim
+	cd ~/Documents/trash/vim
 	let l:dir=system("echo $RANDOM")
 	execute "!mkdir ".l:dir
 	execute "cd ".l:dir
