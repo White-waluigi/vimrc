@@ -3,3 +3,4 @@ function SetupJS()
 	map <F5> :call Printcmd("firefox ".@%) <CR>	
 endfunction
 
+
