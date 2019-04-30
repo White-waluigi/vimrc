@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~/Documents/vimrc
-A="$(ls ~/.vim/src)"
+A="$(find ~/.vim/src)"
 A="${A} ~/.vimrc"
 echo $A
 
