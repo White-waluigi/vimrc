@@ -27,3 +27,17 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+[master 7380a35] Entr auto update
+ 1 file changed, 21 insertions(+)
+warning: redirecting to https://github.com/white-waluigi/vimrc.git/
+warning: redirecting to https://github.com/white-waluigi/vimrc.git/
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/White-waluigi/vimrc.git        
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/White-waluigi/vimrc.git        
+To https://www.github.com/white-waluigi/vimrc
+ ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at 7380a35f7230703002d8869eaadb26167ae7366a but expected 8b04b47438c3a3af2f7d7564e91fe55efedb890f)
+error: failed to push some refs to 'https://www.github.com/white-waluigi/vimrc'
+To https://www.github.com/white-waluigi/vimrc
+ ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at 7380a35f7230703002d8869eaadb26167ae7366a but expected 8b04b47438c3a3af2f7d7564e91fe55efedb890f)
+error: failed to push some refs to 'https://www.github.com/white-waluigi/vimrc'
