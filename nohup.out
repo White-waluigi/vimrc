@@ -61,3 +61,10 @@ To https://www.github.com/white-waluigi/vimrc
 To https://www.github.com/white-waluigi/vimrc
  ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at f04b7a7cee95d9ff49c3cb9209f3339a97afa996 but expected 7380a35f7230703002d8869eaadb26167ae7366a)
 error: failed to push some refs to 'https://www.github.com/white-waluigi/vimrc'
+fatal: Unable to create '/home/marvin/Documents/vimrc/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
