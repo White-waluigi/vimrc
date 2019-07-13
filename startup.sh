@@ -8,4 +8,5 @@ echo $A
 A=$"${A}${NEWLINE}$(find ~/.config/nvim/init.vim)"
 echo "${A}"
 
-nohup  echo "$A" | entr  ./entrscript.sh &
+echo "$A" |  nohup entr  ./entrscript.sh &
+
