@@ -1,1 +1,8 @@
 entr: No regular files to watch
+[master 7c58161] Entr auto update
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+warning: redirecting to https://github.com/white-waluigi/vimrc.git/
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/White-waluigi/vimrc.git        
+To https://www.github.com/white-waluigi/vimrc
+   7cf72b8..7c58161  master -> master
