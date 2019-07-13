@@ -49,7 +49,6 @@ set completeopt-=preview
 "autocmd VimEnter * :Vexplore | wincmd l
 "augroup END
 
-
 function Killbuffer(buf)
 	if bufwinnr(a:buf) > 0
 		exec "bd! ".a:buf
