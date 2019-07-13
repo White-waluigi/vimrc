@@ -3,9 +3,9 @@
 
 NEWLINE=$'\n'
 cd ~/Documents/vimrc
-A="$(find ~/.vim/src)"
+A="$(find ~/.config/nvim/src)"
 echo $A
-A=$"${A}${NEWLINE}$(find ~/.vimrc)"
+A=$"${A}${NEWLINE}$(find ~/.config/nvim/init.vim)"
 echo "${A}"
 
 echo "$A" | entr ./entrscript.sh

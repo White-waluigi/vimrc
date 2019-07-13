@@ -12,10 +12,11 @@ map <C-B> :let filen=input("enter file name:") \| exec "!touch ".filen \| CtrlPC
 noremap ;; :%s:::g<Left><Left><Left>
 source $VIMRUNTIME/mswin.vim
 behave mswin
-
+set mouse=a
 
 "set lines=100 columns=2999
 call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
+
 
 set nowrap
 set nolinebreak
@@ -142,6 +143,8 @@ call plug#begin()
 	Plug 'bbchung/clighter8'
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'tandrewnichols/vim-determined'	
+	Plug 'godlygeek/tabular'
+	Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 highlight MatchParen ctermbg=2
