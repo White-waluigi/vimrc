@@ -18,6 +18,7 @@ set mouse=a
 call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
 
 
+
 set nowrap
 set nolinebreak
 set nolist
