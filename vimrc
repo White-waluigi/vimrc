@@ -39,6 +39,7 @@ set cursorline
 let g:ycm_enable_diagnostic_signs=0
 set completeopt-=preview
 
+
 "let g:netrw_banner = 0
 "let g:netrw_liststyle = 3
 "let g:netrw_browse_split = 4
