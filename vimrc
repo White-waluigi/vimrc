@@ -39,7 +39,6 @@ set cursorline
 let g:ycm_enable_diagnostic_signs=0
 set completeopt-=preview
 
-
 "let g:netrw_banner = 0
 "let g:netrw_liststyle = 3
 "let g:netrw_browse_split = 4
@@ -118,8 +117,12 @@ function Setuppython()
 endfunction
 
 "Autoload Javascript in browser
-runtime src/cpp.vim
-runtime src/jsexec.vim
+#runtime src/cpp.vim
+#runtime src/jsexec.vim
+runtime src/newt/cpp.vim
+runtime src/newt/java.vim
+runtime src/newt/python.vim
+
 
 
 function NewTrash()
