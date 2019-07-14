@@ -68,7 +68,7 @@ function NewTrash(lang)
 	execute "cd ".l:dir
 
 	if lang=="p"
-		call NewPython()
+		call NewPy()
 	endif
 	if lang=="c"
 		call NewCPP()
