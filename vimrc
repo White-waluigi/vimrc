@@ -117,8 +117,8 @@ function Setuppython()
 endfunction
 
 "Autoload Javascript in browser
-#runtime src/cpp.vim
-#runtime src/jsexec.vim
+"runtime src/cpp.vim
+"runtime src/jsexec.vim
 runtime src/newt/cpp.vim
 runtime src/newt/java.vim
 runtime src/newt/python.vim
