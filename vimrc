@@ -58,6 +58,7 @@ runtime src/newt/python.vim
 
 function MapRun()
 	map <F5> :call GenericRun()<cr>
+endfunction
 
 
 function NewTrash(lang)
