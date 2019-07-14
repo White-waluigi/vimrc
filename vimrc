@@ -49,73 +49,6 @@ set completeopt-=preview
 "autocmd VimEnter * :Vexplore | wincmd l
 "augroup END
 
-function Killbuffer(buf)
-	if bufwinnr(a:buf) > 0
-		exec "bd! ".a:buf
-	endif		
-endfunction
-function Printcmd(arg)
-	"let logjob = job_start("cmake\ -Bbuild\ -H.\ &&\ cmake\ --build\ build/\ --\ -j4\ -w", {'out_io': 'buffer', 'out_name': 'buildwindow'})
-	"set splitbelow
-	"bd dummy
-	"let logjob = job_start(["/bin/bash","-c",g:buildprg."| tail -f"],{'out_io': 'buffer', 'out_name': 'dummy'})
-	"set splitbelow
-	"20split | buffer dummy
-	try	
-		wa!
-	catch
-	endtry
-	call Killbuffer("dummy")
-	let oldval=&splitbelow
-	set splitbelow
-	"echo "executing: ".a:arg 	
-	"A command prinitng itself partially while being executed in case you are confused
-	"exec ":normal! A echo \"command:\'".a:arg."\'\" && ".a:arg
-	let termjb=term_start(["bash","-c","echo \"command:\'".a:arg."\'\" && ".a:arg],{"term_rows":11,"term_name":"dummy"})
-	echo "echo \"command:\'".a:arg."\'\" && ".a:arg
-	wincmd p
-	let &splitbelow=oldval
-endfunction	
-function Setupcpp(projname,exename)
-	let g:cppstr=a:exename
-
-	
-	function Buildcpp()
-		wa
-		!mkdir build
-		cd build
-		!cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 .. && make
-		let cppoutp= system("cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 . && make")  
-		if v:shell_error
-			echo "fail"
-		else
-			execute g:cppstr
-		endif
-		cd ..
-	endfunction
-
-	"let g:buildprg="cmake\ -Bbuild\ -H.\ &&\ cmake\ --build\ build/\ --\ -j4\ -w"
-	let g:buildprg="cmake -Bbuild -H. -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && cmake --build build/ -- -j4 -w && cp build/compile_commands.json ."
-	let &makeprg=g:buildprg
-	set makeprg=cmake\ -Bbuild\ -H.\ &&\ cmake\ --build\ build/\ --\ -j4\ -w
-	
-
-	map <S-F5>  :call Printcmd(g:buildprg) <CR>
-	map <F5>	:call  Printcmd(g:buildprg."&& clear &&".g:cppstr) <CR>
-	map <F6>	:call Killbuffer("dummy")<CR>
-	map <C-F5> : echo "cleaning build" \| exec "!rm -rf build/" <CR>
-	"map <F6> <ESC>:call Buildcpp() | execute g:cppstr	<CR>
-endfunction
-
-
-
-
-
-au BufReadPost,BufNewFile *.py call Setuppython()
-function Setuppython()
-	map <F5> :call Printcmd("python3 ".@%) <CR>	
-endfunction
-
 "Autoload Javascript in browser
 "runtime src/cpp.vim
 "runtime src/jsexec.vim
@@ -123,6 +56,8 @@ runtime src/newt/cpp.vim
 runtime src/newt/java.vim
 runtime src/newt/python.vim
 
+function MapRun()
+	map <F5> :call GenericRun()<cr>
 
 
 function NewTrash(lang)
