@@ -61,21 +61,21 @@ function MapRun()
 endfunction
 
 
-function NewTrash(lang)
+function NewTrash()
 	cd ~/Documents/trash/vim
 	let l:dir=system("echo $RANDOM")
 	execute "!mkdir ".l:dir
 	execute "cd ".l:dir
-
-	if lang=="p"
-		call NewPy()
-	endif
-	if lang=="c"
-		call NewCPP()
-	endif
-	if lang=="j"
-		call NewJS()
-	endif
+"
+"	if lang=="p"
+"		call NewPy()
+"	endif
+"	if lang=="c"
+"		call NewCPP()
+"	endif
+"	if lang=="j"
+"		call NewJS()
+"	endif
 endfunction
 
 command Newt call NewTrash()
