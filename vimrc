@@ -66,6 +66,16 @@ function NewTrash(lang)
 	let l:dir=system("echo $RANDOM")
 	execute "!mkdir ".l:dir
 	execute "cd ".l:dir
+
+	if lang=="p"
+		call NewPython()
+	endif
+	if lang=="c"
+		call NewCPP()
+	endif
+	if lang=="j"
+		call NewJS()
+	endif
 endfunction
 
 command Newt call NewTrash()
@@ -99,4 +109,3 @@ set guioptions-=T  "remove toolbar
 "let g:ctrlp_show_hidden = 1
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 inoremap · ->
-
