@@ -2,7 +2,7 @@ function SetupCPP()
 	!cp -a ~/.config/nvim/src/newt/cpp/. .
 	e main.cpp
 	function! GenericRun()
-		call system("urxvt -e sh -c cmake . | tee cmake.log") 
+		call system("urxvt -e sh -c \"cmake . | tee cmake.log\"") 
 		sp cmake.log
 		return
 
