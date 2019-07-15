@@ -1,5 +1,5 @@
 function SetupCPP()
-	!cp -a ~/.conf/nvim/src/cpp/. .
+	!cp -a ~/.config/nvim/src/cpp/. .
 	e main.cpp
 	function GenericRun()
 		!urxvt -e cmake ..
