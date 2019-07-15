@@ -7,9 +7,3 @@ function SetupCPP()
 		!urxvt -e ./main
 	endfunction
 endfunction
-
-
-
-
-
-
