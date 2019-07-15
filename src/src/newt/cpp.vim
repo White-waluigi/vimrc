@@ -3,10 +3,8 @@ function SetupCPP()
 	e main.cpp
 	function! GenericRun()
 		call system("urxvt -e cmake . |  tee cmake.log") 
-		if v:shell_error != 0
-			sp cmake.log
-			return
-		endif
+		sp cmake.log
+		return
 
 		call system("urxvt -e make -j4 | tee make.log")
 		if v:shell_error != 0
