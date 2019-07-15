@@ -5,6 +5,8 @@ function SetupCPP()
 		!urxvt -e cmake ..
 		!urxvt -e make -j4
 		!urxvt -e ./main
+	endfunction
+endfunction
 
 
 
