@@ -89,7 +89,7 @@ call plug#begin()
 	Plug 'tpope/vim-dispatch'
 	Plug 'itchyny/lightline.vim'
 	Plug 'tikhomirov/vim-glsl'
-	Plug 'bbchung/clighter8'
+"	Plug 'bbchung/clighter8'
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'tandrewnichols/vim-determined'	
 	Plug 'godlygeek/tabular'
