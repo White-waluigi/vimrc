@@ -52,6 +52,8 @@ set completeopt-=preview
 "Autoload Javascript in browser
 "runtime src/cpp.vim
 "runtime src/jsexec.vim
+
+runtime src/helper.vim
 runtime src/newt/cpp.vim
 runtime src/newt/java.vim
 runtime src/newt/python.vim
