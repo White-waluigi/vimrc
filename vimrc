@@ -63,7 +63,7 @@ function MapRun()
 endfunction
 
 
-function NewTrash()
+function NewTrash(lang)
 	cd ~/Documents/trash/vim
 	let l:dir=system("echo $RANDOM")
 	execute "!mkdir ".l:dir
