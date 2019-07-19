@@ -80,7 +80,7 @@ function NewTrash(lang)
 	endif
 endfunction
 
-command! -nargs=1 Newt call s:MyFunc(<f-args>)
+command! -nargs=1 Newt call NewTrash(<f-args>)
 
 
 call plug#begin()
