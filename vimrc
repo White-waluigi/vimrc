@@ -59,7 +59,7 @@ runtime src/newt/java.vim
 runtime src/newt/python.vim
 
 function MapRun()
-	map <F5> :wa | call GenericRun()<cr>
+	map <F5> :wa \| call GenericRun()<cr>
 endfunction
 
 
