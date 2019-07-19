@@ -4,4 +4,5 @@ function SetupCPP()
 	function! GenericRun()
 		let l:res = ECom("cmake . && clear && make -j4 && clear && ./main") 
 	endfunction
+	MapRun()
 endfunction
