@@ -68,16 +68,16 @@ function NewTrash()
 	let l:dir=system("echo $RANDOM")
 	execute "!mkdir ".l:dir
 	execute "cd ".l:dir
-"
-"	if lang=="p"
-"		call NewPy()
-"	endif
-"	if lang=="c"
-"		call NewCPP()
-"	endif
-"	if lang=="j"
-"		call NewJS()
-"	endif
+
+	if lang=="p"
+		call SetupPy()
+	endif
+	if lang=="c"
+		call SetupCPP()
+	endif
+	if lang=="j"
+		call SetupJS()
+	endif
 endfunction
 
 command Newt call NewTrash()
