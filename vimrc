@@ -69,13 +69,13 @@ function NewTrash(lang)
 	execute "!mkdir ".l:dir
 	execute "cd ".l:dir
 
-	if lang=="p"
+	if a:lang=="p"
 		call SetupPy()
 	endif
-	if lang=="c"
+	if a:lang=="c"
 		call SetupCPP()
 	endif
-	if lang=="j"
+	if a:lang=="j"
 		call SetupJS()
 	endif
 endfunction
