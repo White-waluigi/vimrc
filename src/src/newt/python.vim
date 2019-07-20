@@ -1,5 +1,5 @@
 function SetupPy()
-	!cp -a ~/.config/nvim/src/newt/cpp/. .
+	!cp -a ~/.config/nvim/src/newt/python/. .
 	e main.py
 
 	
