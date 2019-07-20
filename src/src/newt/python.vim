@@ -4,6 +4,6 @@ function SetupPy()
 
 	
 	function! GenericRun()
-		let l:res = ECom("python3 %||read") 
+		let l:res = ECom("python3 ".@%."||read") 
 	endfunction
 endfunction
