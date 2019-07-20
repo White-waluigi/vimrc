@@ -56,6 +56,7 @@ set completeopt-=preview
 runtime src/helper.vim
 runtime src/newt/cpp.vim
 runtime src/newt/java.vim
+runtime src/newt/js.vim
 runtime src/newt/python.vim
 
 function MapRun()
