@@ -6,4 +6,5 @@ function SetupPy()
 	function! GenericRun()
 		let l:res = ECom("python3 ".@%."||read") 
 	endfunction
+	call MapRun()
 endfunction
