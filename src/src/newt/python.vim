@@ -5,5 +5,5 @@ function SetupPy()
 	
 	function! GenericRun()
 		let l:res = ECom("python3 %||read") 
-	endfunctpy
+	endfunction
 endfunction
