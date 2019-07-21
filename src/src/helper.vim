@@ -3,7 +3,6 @@ function ECom(com)
 	"system("urxvt -e sh -c \"".com.";echo $? > ".l:file."\"")
 	
 	call system ("urxvtc -e sh -c '(".a:com.") || read  '")
-	echo ("urxvtc -e sh -c '(".a:com.") || read  '")
 
 
 
