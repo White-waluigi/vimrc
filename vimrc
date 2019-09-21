@@ -27,6 +27,9 @@ set hlsearch
 highlight Normal guifg=white guibg=black
 "colorscheme evening
 
+set splitright
+set splitbelow
+
 au BufWinEnter * set number
 set exrc
 set tabstop=4
