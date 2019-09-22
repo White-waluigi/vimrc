@@ -88,7 +88,7 @@ command! -nargs=1 Newt call NewTrash(<f-args>)
 
 
 call plug#begin()
-"Plug 'Valloric/YouCompleteMe'
+	Plug 'Valloric/YouCompleteMe'
     Plug 'tpope/vim-fugitive'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'scrooloose/nerdtree'
@@ -100,7 +100,7 @@ call plug#begin()
 	Plug 'tandrewnichols/vim-determined'	
 	Plug 'godlygeek/tabular'
 	Plug 'plasticboy/vim-markdown'
-	Plug 'neoclide/coc.nvim'
+"	Plug 'neoclide/coc.nvim'
 call plug#end()
 
 highlight MatchParen ctermbg=2
