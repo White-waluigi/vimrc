@@ -101,7 +101,7 @@ call plug#begin()
 	Plug 'godlygeek/tabular'
 	Plug 'plasticboy/vim-markdown'
 "	Plug 'neoclide/coc.nvim'
-	Plugin 'mechatroner/rainbow_csv'
+	Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 highlight MatchParen ctermbg=2
