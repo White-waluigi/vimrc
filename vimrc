@@ -17,7 +17,6 @@ set mouse=a
 "set lines=100 columns=2999
 call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
 
-
 set nowrap
 set nolinebreak
 set nolist
