@@ -10,7 +10,7 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-s> :noh<CR>
 map <C-B> :let filen=input("enter file name:") \| exec "!touch ".filen \| CtrlPClearAllCaches \| exec "e ".filen <CR>
 noremap ;; :%s:::g<Left><Left><Left>
-
+noremap <Esc> <Nop>
 source $VIMRUNTIME/mswin.vim
 behave mswin
 set mouse=a
