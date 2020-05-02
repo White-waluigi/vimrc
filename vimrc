@@ -109,7 +109,7 @@ highlight MatchParen ctermbg=2
 let g:ctrlp_map = 'ö'
 let g:ctrlp_cmd = 'CtrlP'
 
-map ö : CtrlPClearAllCaches<CR>
+map ä : CtrlPClearAllCaches<CR>
 
 
 set guioptions-=m  "remove menu bar
