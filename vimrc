@@ -106,7 +106,7 @@ call plug#begin()
 call plug#end()
 
 highlight MatchParen ctermbg=2
-let g:ctrlp_map = 'ä'
+let g:ctrlp_map = 'ö'
 let g:ctrlp_cmd = 'CtrlP'
 
 map ö : CtrlPClearAllCaches<CR>
