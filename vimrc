@@ -105,8 +105,8 @@ call plug#begin()
 	Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
-
 filetype plugin on
+let g:instant_markdown_browser = "firefox --new-window"
 
 highlight MatchParen ctermbg=2
 let g:ctrlp_map = 'ö'
