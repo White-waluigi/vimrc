@@ -102,6 +102,7 @@ call plug#begin()
 	Plug 'plasticboy/vim-markdown'
 "	Plug 'neoclide/coc.nvim'
 	Plug 'mechatroner/rainbow_csv'
+	Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
 highlight MatchParen ctermbg=2
