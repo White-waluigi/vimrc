@@ -99,14 +99,11 @@ call plug#begin()
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'tandrewnichols/vim-determined'	
 	Plug 'godlygeek/tabular'
-"	Plug 'plasticboy/vim-markdown'
+	Plug 'plasticboy/vim-markdown'
 "	Plug 'neoclide/coc.nvim'
 	Plug 'mechatroner/rainbow_csv'
-	Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
-filetype plugin on
-let g:instant_markdown_browser = "firefox --new-window"
 
 highlight MatchParen ctermbg=2
 let g:ctrlp_map = 'ö'
