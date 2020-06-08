@@ -105,6 +105,9 @@ call plug#begin()
 	Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
+
+filetype plugin on
+
 highlight MatchParen ctermbg=2
 let g:ctrlp_map = 'ö'
 let g:ctrlp_cmd = 'CtrlP'
