@@ -102,7 +102,7 @@ call plug#begin()
 	Plug 'plasticboy/vim-markdown'
 "	Plug 'neoclide/coc.nvim'
 	Plug 'mechatroner/rainbow_csv'
-	Plug 'lervag/vimtex'
+"	Plug 'lervag/vimtex'
 call plug#end()
 
 
