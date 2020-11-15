@@ -120,4 +120,9 @@ set guioptions-=T  "remove toolbar
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 inoremap · ->
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor
+let g:ctrlp_custom_ignore = {
+	\   'dir' : '\.git$\|build$\|bower_components\|node_modules\|dist\|target' ,
+	\ 	'file' : '\v\.(exe|dll|lib)$'
+	\ }
+
+
