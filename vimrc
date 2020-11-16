@@ -103,7 +103,6 @@ call plug#begin()
 "	Plug 'neoclide/coc.nvim'
 	Plug 'mechatroner/rainbow_csv'
 "	Plug 'lervag/vimtex'
-	Plug 'chemzqm/vim-jsx-improve'
 call plug#end()
 
 
