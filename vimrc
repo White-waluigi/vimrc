@@ -14,6 +14,8 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 set mouse=a
 
+
+"what was this again?
 "set lines=100 columns=2999
 call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
 
