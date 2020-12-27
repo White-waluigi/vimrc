@@ -106,6 +106,7 @@ call plug#begin()
 	Plug 'mechatroner/rainbow_csv'
 "	Plug 'lervag/vimtex'
 	Plug 'maxmellon/vim-jsx-pretty'
+	Plugin 'stephpy/vim-yaml'
 call plug#end()
 
 
