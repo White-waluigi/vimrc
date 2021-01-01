@@ -90,20 +90,20 @@ command! -nargs=1 Newt call NewTrash(<f-args>)
 
 
 call plug#begin()
-"	Plug 'Valloric/YouCompleteMe'
-"    Plug 'tpope/vim-fugitive'
-"    Plug 'ctrlpvim/ctrlp.vim'
-"    Plug 'scrooloose/nerdtree'
-"	Plug 'tpope/vim-dispatch'
-"	Plug 'itchyny/lightline.vim'
-"	Plug 'tikhomirov/vim-glsl'
-"	Plug 'octol/vim-cpp-enhanced-highlight'
-"	Plug 'tandrewnichols/vim-determined'	
-"	Plug 'godlygeek/tabular'
-"	Plug 'plasticboy/vim-markdown'
-"	Plug 'mechatroner/rainbow_csv'
-"	Plug 'maxmellon/vim-jsx-pretty'
-"	Plug 'pedrohdz/vim-yaml-folds'
+	Plug 'Valloric/YouCompleteMe'
+    Plug 'tpope/vim-fugitive'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'scrooloose/nerdtree'
+	Plug 'tpope/vim-dispatch'
+	Plug 'itchyny/lightline.vim'
+	Plug 'tikhomirov/vim-glsl'
+	Plug 'octol/vim-cpp-enhanced-highlight'
+	Plug 'tandrewnichols/vim-determined'	
+	Plug 'godlygeek/tabular'
+	Plug 'plasticboy/vim-markdown'
+	Plug 'mechatroner/rainbow_csv'
+	Plug 'maxmellon/vim-jsx-pretty'
+	Plug 'pedrohdz/vim-yaml-folds'
 call plug#end()
 
 
