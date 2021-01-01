@@ -90,7 +90,7 @@ command! -nargs=1 Newt call NewTrash(<f-args>)
 
 
 call plug#begin()
-	Plug 'Valloric/YouCompleteMe'
+"	Plug 'Valloric/YouCompleteMe'
     Plug 'tpope/vim-fugitive'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'scrooloose/nerdtree'
