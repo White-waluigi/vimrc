@@ -126,4 +126,6 @@ let g:ctrlp_custom_ignore = {
 	\ 	'file' : '\v\.(exe|dll|lib)$'
 	\ }
 
+"fix sql CTRL-C"
+let g:ftplugin_sql_omni_key = '<C-j>'
 
