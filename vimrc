@@ -104,6 +104,7 @@ call plug#begin()
 	Plug 'mechatroner/rainbow_csv'
 	Plug 'maxmellon/vim-jsx-pretty'
 	Plug 'pedrohdz/vim-yaml-folds'
+	Plug '907th/vim-auto-save'
 call plug#end()
 
 
