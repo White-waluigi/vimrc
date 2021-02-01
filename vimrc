@@ -109,8 +109,8 @@ call plug#begin()
 	Plug 'maxmellon/vim-jsx-pretty'
 	Plug 'pedrohdz/vim-yaml-folds'
 	Plug '907th/vim-auto-save'
-	Plug 'SirVer/ultisnips'
-	Plug 'epilande/vim-react-snippets'
+	"Plug 'SirVer/ultisnips'
+	"Plug 'epilande/vim-react-snippets'
 call plug#end()
 
 
