@@ -105,6 +105,7 @@ call plug#begin()
 	Plug 'maxmellon/vim-jsx-pretty'
 	Plug 'pedrohdz/vim-yaml-folds'
 	Plug '907th/vim-auto-save'
+	Plug 'epilande/vim-react-snippets'
 call plug#end()
 
 
