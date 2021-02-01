@@ -88,6 +88,10 @@ endfunction
 
 command! -nargs=1 Newt call NewTrash(<f-args>)
 
+"Ultisnipps
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 call plug#begin()
 	Plug 'Valloric/YouCompleteMe'
