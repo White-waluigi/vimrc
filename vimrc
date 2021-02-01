@@ -8,7 +8,7 @@ map <F11> :exec "!gvim &"\| qa!<CR>
 map <F10> :!date +\%R<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-s> :noh<CR>
-*map <C-B> :let filen=input("enter file name:") \| exec "!touch ".filen \| CtrlPClearAllCaches \| exec "e ".filen <CR>
+"map <C-B> :let filen=input("enter file name:") \| exec "!touch ".filen \| CtrlPClearAllCaches \| exec "e ".filen <CR>
 noremap ;; :%s:::g<Left><Left><Left>
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -89,7 +89,7 @@ endfunction
 command! -nargs=1 Newt call NewTrash(<f-args>)
 
 "Ultisnipps
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
