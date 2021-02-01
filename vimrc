@@ -106,7 +106,7 @@ call plug#begin()
 	Plug 'pedrohdz/vim-yaml-folds'
 	Plug '907th/vim-auto-save'
 	Plug 'epilande/vim-react-snippets'
-	Plugin 'SirVer/ultisnips'
+	Plug 'SirVer/ultisnips'
 call plug#end()
 
 
