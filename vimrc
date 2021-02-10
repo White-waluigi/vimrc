@@ -8,7 +8,7 @@ map <F11> :exec "!gvim &"\| qa!<CR>
 map <F10> :!date +\%R<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-s> :noh<CR>
-map <ü> :!nohup urxvt !<CR>
+map <ü> :!nohup urxvt &<CR>
 "map <C-B> :let filen=input("enter file name:") \| exec "!touch ".filen \| CtrlPClearAllCaches \| exec "e ".filen <CR>
 noremap ;; :%s:::g<Left><Left><Left>
 source $VIMRUNTIME/mswin.vim
